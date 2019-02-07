@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Merienda:400,700|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+body{
+    padding:0 ;
+    margin:0 ;
+    
+    font-family: 'Open Sans', sans-serif !important;
+}
+nav  ul  li a{
+    color:white;
+    zoom:1.1;
+}
+
+nav  ul  li a:hover{
+    color:white;
+    opacity:0.7;
+}
+
+.container .jumbotron{
+    margin-top:20px;
+}
+
+.container{
+    margin-bottom:30px;
+}
+
+.row{
+    margin-bottom: 30px;
+    
+}
+
+.footer{
+    background-color: darkgray;
+    padding: 30px 30px;
+    color:whitesmoke;
+
+    
+}
+.container-fluid{
+    margin-bottom: 0;
+}
+
+#logo{
+    font-family: 'Merienda', cursive;
+    font-weight: 700;
+    zoom:1.3;
+}
