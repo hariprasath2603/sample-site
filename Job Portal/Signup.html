@@ -1,0 +1,70 @@
+<html>
+<head>
+  <title>Job Portal</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body class="text-white" style="background-color: #262626">
+
+
+
+<form id="sign-form" action="act_signup.php" method="POST">
+  <div class="container">
+    <h1>Sign Up</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    
+    <label for="fname"><b>Firstname</b></label>
+    <input type="text"  class="form-control"placeholder="Enter Firstname" name="fname" required>
+   
+    <label for="lname"><b>Lastname</b></label>
+    <input type="text" class="form-control" placeholder="Enter Lastname" name="last" required>
+		
+    <label for="email" ><b>Email</b></label>
+    <input type="text" class="form-control" placeholder="Enter Email" name="email" required>
+
+    <label for="psw" id="psw"><b>Password</b></label>
+    <input type="password"   class="form-control" placeholder="Enter Password" name="psw" required>
+	<p id="demo1"></p>
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" class="form-control" placeholder="Repeat Password" name="psw-repeat" required>
+    
+    <label for="contact"><b>Contact</b></label>
+    <input type="text" class="form-control" placeholder="Contact" name="contact" required>
+
+    <label for="address"><b>Address</b></label>
+    <input type="text" class="form-control" placeholder="Address" name="address" required>
+    	
+    
+    
+    <!-- <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>  -->
+
+    <div class="clearfix" style="margin-top:12px;">
+    <button type="submit" onsubmit="myFunc()" class="btn btn-success">Sign Up</button>  
+    <button type="button" class="btn btn-danger">Cancel</button>
+      
+    </div>
+  </div>
+</form>
+
+</body>
+<script>
+	function myFunc()
+	{
+		var1=document.getElementById("psw").value;	
+		var2=document.getElementById("psw-repeat").value;
+		if(var1===var2)
+		{
+			document.getElementById("sign-form").submit();
+		}
+		else
+		{
+			document.getElementById("demo1").innerHTML="Password Mismatch12222";
+			exit;
+		}
+	}
+</script>
+</html>
